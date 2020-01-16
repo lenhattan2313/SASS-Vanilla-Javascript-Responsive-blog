@@ -1,0 +1,23 @@
+//Smart phone
+@include mediaSm {
+}
+//tablet and small laptop
+@include mediaMd {
+  .nav-collapse {
+    visibility: visible;
+  }
+
+  //   body {
+  //     background: goldenrod;
+  //   }
+  .nav-items,
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+//desktop and laptop
+@include mediaLg {
+}
+//Widescreen
+@include mediaXl {
+}
