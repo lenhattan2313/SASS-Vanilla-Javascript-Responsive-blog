@@ -1,5 +1,5 @@
 @import "config";
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Rajdhani|PT+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,17 @@ a {
   text-decoration: none;
   color: $secondary-color;
 }
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+//
 .nav-bar {
   @include easeOut;
   font-family: $font-montserrat;
@@ -75,10 +86,44 @@ a {
 }
 //show-nav with mobile
 .collapse {
-  height: 30rem;
+  height: 32rem;
 }
 //show-nav with mobile
-
+//main section
+.site-main {
+  letter-spacing: $letter-space;
+  font-family: $font-pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  .background-site {
+    padding-top: 14em;
+    text-align: center;
+    background: url(../assets/image/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    h1 {
+      padding-top: 0.5em;
+    }
+    .site-btn {
+      margin-top: 1em;
+      padding: 1em 2em;
+      background: $third-color;
+      border: 0.1em solid $primary-color;
+      border-radius: 1em;
+      letter-spacing: $letter-space;
+      @include easeOut;
+      &:hover {
+        color: $primary-color;
+        border: 0.1em solid $third-color;
+        background: none;
+      }
+    }
+  }
+}
 @import "mobile";
 // .show-nav {
 //   visibility: visible;
