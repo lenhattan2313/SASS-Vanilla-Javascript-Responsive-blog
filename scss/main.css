@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Rajdhani|PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Rajdhani|PT+Sans|Dancing+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
   padding: 0 2rem;
   height: 0rem;
-  min-height: 10vh;
+  min-height: 60px;
   overflow: hidden;
 }
 
@@ -116,6 +116,10 @@ h3 {
   height: 32rem;
 }
 
+main {
+  background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+}
+
 .site-main {
   letter-spacing: 2px;
   font-family: "PT Sans", sans-serif;
@@ -133,6 +137,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   color: #f5f5f5;
+  border-bottom: 0.3em solid #f5f5f5;
 }
 
 .site-main .background-site {
@@ -157,12 +162,99 @@ h3 {
   letter-spacing: 2px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .site-main .background-site .site-btn:hover {
   color: #f5f5f5;
   border: 0.1em solid #30e3ca;
   background: none;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+  border: 0.3em solid #f5f5f5;
+  height: 40vh;
+  max-height: 500px;
+  position: relative;
+}
+
+.carousel-container .carousel-content {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-container .carousel-content .slider {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 40vh;
+  max-height: 500px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.carousel-container .carousel-content .slider span {
+  font-family: "Dancing Script", cursive;
+  margin: 1em;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.carousel-container .carousel-content .slider1 {
+  background: url(../assets/image/photo1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-container .carousel-content .slider2 {
+  background: url(../assets/image/photo2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-container .carousel-content .slider3 {
+  background: url(../assets/image/photo3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-container .carousel-content .slider4 {
+  background: url(../assets/image/photo4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-container .fa {
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  color: #f5f5f5;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.carousel-container .fa:hover {
+  background: black;
+  opacity: 0.5;
+}
+
+.carousel-container .fa-chevron-left {
+  left: 5%;
+}
+
+.carousel-container .fa-chevron-right {
+  right: 5%;
 }
 
 @media screen and (max-width: 760px) {
