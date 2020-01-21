@@ -10,6 +10,24 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  position: relative;
+}
+
+.move-up {
+  position: fixed;
+  bottom: 15%;
+  z-index: 10;
+  right: 5%;
+  font-size: 3rem;
+  color: darkcyan;
+}
+
+.move-up:hover {
+  cursor: pointer;
+  color: #30e3ca;
+}
+
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +478,115 @@ ul {
   border: none;
   border-radius: 2em;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+footer {
+  margin-top: 3rem 0;
+  background: #272525;
+  height: 100%;
+  position: relative;
+  padding: 1.5em 3em;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  font-family: "PT Sans", sans-serif;
+  color: #f5f5f5;
+}
+
+footer .container .footer-about {
+  width: 85%;
+}
+
+footer .container .footer-about p {
+  margin-top: 1em;
+}
+
+footer .container .footer-newsletter .footer-form {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+footer .container .footer-newsletter .footer-form input {
+  padding: 0.5em 1em;
+  width: 70%;
+  border: none;
+  background: black;
+  color: #f5f5f5;
+}
+
+footer .container .footer-newsletter .footer-form span {
+  padding: 1em 1.3em;
+  border: none;
+  font-size: 1.2rem;
+  color: black;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+footer .container .footer-newsletter .footer-form span:hover {
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+footer .container .footer-insta {
+  width: 80%;
+}
+
+footer .container .footer-insta h2 {
+  margin-bottom: 0.8em;
+}
+
+footer .container .footer-insta .picture {
+  margin-top: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container .footer-insta .picture img {
+  border: 0.1em solid #f5f5f5;
+  width: 30%;
+  height: 50%;
+}
+
+footer .container .footer-insta .picture img:hover {
+  border: 0.1em solid #30e3ca;
+}
+
+footer .container .footer-social p {
+  margin-top: 1em;
+}
+
+footer .container .footer-social .social {
+  font-size: 2rem;
+}
+
+footer .container .footer-social .social .fa {
+  margin: 0.3em;
+}
+
+footer .container .footer-social .social .fa:hover {
+  color: #30e3ca;
+}
+
+footer .copyright {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+}
+
+footer .copyright span {
+  color: #f5f5f5;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+footer .copyright span:hover {
+  font-size: 1.5rem;
+  color: #30e3ca;
 }
 
 @media screen and (max-width: 760px) {

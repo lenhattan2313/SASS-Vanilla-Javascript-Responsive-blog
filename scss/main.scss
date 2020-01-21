@@ -8,6 +8,21 @@
 html {
   font-size: 62.5%;
 }
+body {
+  position: relative;
+}
+.move-up {
+  position: fixed;
+  bottom: 15%;
+  z-index: 10;
+  right: 5%;
+  font-size: 3rem;
+  color: darkcyan;
+  &:hover {
+    cursor: pointer;
+    color: $third-color;
+  }
+}
 // global
 .flex-row {
   display: flex;
@@ -366,6 +381,96 @@ ul {
         border: none;
         border-radius: 2em;
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  margin-top: 3rem 0;
+  background: rgb(39, 37, 37);
+  height: 100%;
+  position: relative;
+  padding: 1.5em 3em;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: $font-pt;
+    color: $primary-color;
+
+    .footer-about {
+      width: 85%;
+      p {
+        margin-top: 1em;
+      }
+    }
+    .footer-newsletter {
+      .footer-form {
+        margin-top: 1em;
+        display: inline-block;
+        input {
+          padding: 0.5em 1em;
+          width: 70%;
+          border: none;
+          background: black;
+          color: $primary-color;
+        }
+        span {
+          padding: 1em 1.3em;
+          border: none;
+          font-size: 1.2rem;
+          color: black;
+          background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+          &:hover {
+            cursor: pointer;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    .footer-insta {
+      width: 80%;
+      h2 {
+        margin-bottom: 0.8em;
+      }
+      .picture {
+        margin-top: 1em;
+        justify-content: space-around;
+        img {
+          border: 0.1em solid $primary-color;
+          width: 30%;
+          height: 50%;
+          &:hover {
+            border: 0.1em solid $third-color;
+          }
+        }
+      }
+    }
+    .footer-social {
+      p {
+        margin-top: 1em;
+      }
+      .social {
+        font-size: 2rem;
+        .fa {
+          margin: 0.3em;
+          &:hover {
+            color: $third-color;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    justify-content: center;
+    font-size: 1.2rem;
+    span {
+      color: $primary-color;
+      @include easeOut;
+      &:hover {
+        font-size: 1.5rem;
+        color: $third-color;
       }
     }
   }
