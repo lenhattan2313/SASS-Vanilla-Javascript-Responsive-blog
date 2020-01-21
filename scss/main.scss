@@ -249,7 +249,7 @@ ul {
       }
       .post-title {
         margin: 1em 0;
-
+        width: 90%;
         a {
           font-size: 2.4rem;
           font-family: $font-pt;
@@ -283,8 +283,9 @@ ul {
   }
 }
 .sidebar {
+  font-family: $font-montserrat;
+  padding-left: 3em;
   .category {
-    font-family: $font-montserrat;
     .category-list {
       font-family: $font-montserrat;
       font-size: 1.5rem;
@@ -296,6 +297,74 @@ ul {
         display: flex;
         justify-content: space-between;
         border-radius: 0.3em;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+      }
+    }
+  }
+  .popular-posts {
+    padding-top: 12rem;
+    .post-content {
+      margin-bottom: 4em;
+      .post-image {
+        margin-top: 2em;
+        position: relative;
+        .img {
+          img {
+            width: 80%;
+            height: 100px;
+          }
+        }
+        .post-info {
+          position: absolute;
+          bottom: 0.2em;
+          background: white;
+          border-radius: 0 0.3em 0 0;
+          span {
+            margin: 0.25em;
+          }
+        }
+      }
+      .post-title {
+        font-size: 1.3rem;
+        width: 80%;
+        a {
+          color: black;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .newsleter {
+    padding-top: 12rem;
+    form {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      flex-direction: column;
+      input {
+        padding: 0.5em 1em;
+        width: 80%;
+        margin-bottom: 1em;
+      }
+    }
+    button {
+      padding: 0.5em;
+      width: 80%;
+      font-family: $font-montserrat;
+      border: none;
+      border-radius: 0.3em;
+      background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+  }
+  .popular-tags {
+    padding-top: 12rem;
+    .tags {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      .tag {
+        padding: 0.5em;
+        margin: 0.5em 0.8em;
+        border: none;
+        border-radius: 2em;
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
       }
     }

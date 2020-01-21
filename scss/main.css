@@ -314,6 +314,7 @@ ul {
 
 .site-content .posts .post-content .post-title {
   margin: 1em 0;
+  width: 90%;
 }
 
 .site-content .posts .post-content .post-title a {
@@ -352,8 +353,9 @@ ul {
   border-bottom: 0.1em solid #30e3ca;
 }
 
-.sidebar .category {
+.sidebar {
   font-family: "Montserrat", sans-serif;
+  padding-left: 3em;
 }
 
 .sidebar .category .category-list {
@@ -373,6 +375,90 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 0.3em;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.sidebar .popular-posts {
+  padding-top: 12rem;
+}
+
+.sidebar .popular-posts .post-content {
+  margin-bottom: 4em;
+}
+
+.sidebar .popular-posts .post-content .post-image {
+  margin-top: 2em;
+  position: relative;
+}
+
+.sidebar .popular-posts .post-content .post-image .img img {
+  width: 80%;
+  height: 100px;
+}
+
+.sidebar .popular-posts .post-content .post-image .post-info {
+  position: absolute;
+  bottom: 0.2em;
+  background: white;
+  border-radius: 0 0.3em 0 0;
+}
+
+.sidebar .popular-posts .post-content .post-image .post-info span {
+  margin: 0.25em;
+}
+
+.sidebar .popular-posts .post-content .post-title {
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.sidebar .popular-posts .post-content .post-title a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.sidebar .newsleter {
+  padding-top: 12rem;
+}
+
+.sidebar .newsleter form {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .newsleter form input {
+  padding: 0.5em 1em;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.sidebar .newsleter button {
+  padding: 0.5em;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 0.3em;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.sidebar .popular-tags {
+  padding-top: 12rem;
+}
+
+.sidebar .popular-tags .tags {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+
+.sidebar .popular-tags .tags .tag {
+  padding: 0.5em;
+  margin: 0.5em 0.8em;
+  border: none;
+  border-radius: 2em;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
