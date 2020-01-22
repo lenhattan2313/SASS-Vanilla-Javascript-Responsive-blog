@@ -413,7 +413,7 @@ ul {
 
 .sidebar .popular-posts .post-content .post-image .img img {
   width: 100%;
-  min-height: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -594,21 +594,6 @@ footer .copyright span:hover {
   .carousel-container {
     width: 100%;
   }
-  .site-content {
-    padding: 0 1em !important;
-  }
-  .posts .post-info {
-    left: 0 !important;
-    -webkit-transform: none !important;
-            transform: none !important;
-    border-radius: 0px !important;
-  }
-  .popular-posts .post-info {
-    display: none !important;
-  }
-  .sidebar {
-    padding-left: 0 !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -628,11 +613,6 @@ footer .copyright span:hover {
   .site-content {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-  }
-  footer .container {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    grid-row-gap: 3em;
   }
 }
 

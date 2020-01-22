@@ -1,22 +1,74 @@
 //Smart phone
 @include mediaSm {
+  .carousel-container {
+    width: 100%;
+  }
+  .site-content {
+    padding: 0 1em !important;
+  }
+  .posts {
+    .post-info {
+      left: 0 !important;
+      transform: none !important;
+      border-radius: 0px !important;
+    }
+  }
+  .popular-posts {
+    .post-info {
+      display: none !important;
+    }
+  }
+  .sidebar {
+    padding-left: 0 !important;
+  }
 }
 //tablet and small laptop
 @include mediaMd {
   .nav-collapse {
     visibility: visible;
   }
-
-  //   body {
-  //     background: goldenrod;
-  //   }
   .nav-items,
   .nav-menu {
     flex-direction: column;
   }
+  .carousel-container {
+    width: 100%;
+  }
+  .site-content {
+    grid-template-columns: 100%;
+  }
+  footer {
+    .container {
+      grid-template-columns: 100%;
+      grid-row-gap: 3em;
+    }
+  }
 }
 //desktop and laptop
 @include mediaLg {
+  .carousel-container {
+    width: 100%;
+  }
+  .posts {
+    .post-info {
+      left: 0 !important;
+      transform: none !important;
+      border-radius: 0px !important;
+    }
+  }
+  .popular-posts {
+    .post-info {
+      display: none !important;
+    }
+  }
+  footer {
+    padding: 1.5em 10em !important;
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 3em;
+      grid-column-gap: 3em;
+    }
+  }
 }
 //Widescreen
 @include mediaXl {
